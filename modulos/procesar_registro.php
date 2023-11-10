@@ -14,9 +14,11 @@ if (isset($_POST['nombre']) && $_POST['clave']) {
             echo "<script>alert('Registro insertado con exito');</script>";
         }
     }
-
+    // limpio el POST
+    echo "<script>windows.location='index.php?modulo=procesar_registro';";
 }
 ?>
+
 <section id="registro" class="section">
     <h2>Registro</h2>
     <form action="index.php?modulo=procesar_registro" method="POST">
